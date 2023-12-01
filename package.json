@@ -1,0 +1,137 @@
+{
+	"name": "micropython-micobit-support",
+	"displayName": "micro:bit support",
+	"description": "Make micro:bit connections easier",
+	"version": "0.0.1",
+	"author": {
+		"name": "useless_muzi",
+		"email": "lcy1312021@outlook.com"
+	},
+	"publisher": "lcy",
+	"icon": "images/microbitLogo.png",
+	"engines": {
+		"vscode": "^1.84.0"
+	},
+	"categories": [
+		"Snippets",
+		"Education"
+	],
+	"activationEvents": [
+		"onCommand:extension.buildmicrobit",
+		"onCommand:extension.flash-micropython",
+		"onCommand:extension.update_firmware",
+		"onCommand:extension.showPinMap",
+		"onView:micro:bit_control"
+	],
+	"main": "./src/main.js",
+	"contributes": {
+		"snippets": [
+			{
+				"language": "python",
+				"path": "./snippets/python.json"
+			}
+		],
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "microbit-hardware-control",
+					"title": "micro:bit",
+					"icon": "images/microbitLogoNomCouleur.png"
+				}
+			]
+		},
+		"views": {
+			"microbit-hardware-control": [
+				{
+					"id": "micro:bit_control",
+					"name": "operate",
+					"icon": "images/microbitLogoNomCouleur.png",
+					"contextualTitle": "micro:bit"
+				}
+			]
+		},
+		"viewsWelcome": [
+			{
+				"view": "micro:bit_control",
+				"contents": "plug in a micro:bit card and enjoy"
+			}
+		],
+		"commands": [
+			{
+				"command": "extension.buildmicrobit",
+				"title": "Flash to Micro:Bit",
+				"icon": "images/upload.svg"
+			},
+			{
+				"command": "extension.update_firmware",
+				"title": "Update Micro:Bit",
+				"icon": "images/light/download.svg"
+			},
+			{
+				"command": "extension.flash-micropython",
+				"title": "Flash MicroPython",
+				"icon": "images/light/upload.svg"
+			},
+			{
+				"command": "extension.showPinMap",
+				"title": "show micro bit pins image",
+				"icon": "images/pinMap.svg"
+			}
+		],
+		"menus": {
+			"view/title": [
+				{
+					"command": "extension.update_firmware",
+					"when": "view == micro:bit_control",
+					"group": "navigation"
+				},
+				{
+					"command": "extension.flash-micropython",
+					"when": "view == micro:bit_control",
+					"group": "navigation"
+				},
+				{
+					"command": "extension.showPinMap",
+					"when": "view == micro:bit_control",
+					"group": "navigation"
+				}
+			],
+			"view/item/context": [
+				{
+					"command": "extension.showPinMap",
+					"when": "view == micro:bit_control",
+					"group": "navigation"
+				}
+			],
+			"editor/title": [
+				{
+					"command": "extension.buildmicrobit",
+					"when": "resourceLangId == python",
+					"group": "navigation"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"prefix": "node ./node_modules/vscode/bin/test",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"tasks": [
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "echo Hello"
+        }
+    ],
+	"devDependencies": {
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.6",
+		"eslint": "^4.6.1",
+		"@types/node": "^7.0.43",
+		"@types/mocha": "^2.2.42"
+	},
+	"__metadata": {
+		"publisherDisplayName": "useless_muzi"
+	}
+}
