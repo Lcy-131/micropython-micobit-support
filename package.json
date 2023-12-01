@@ -7,6 +7,10 @@
 		"name": "useless_muzi",
 		"email": "lcy1312021@outlook.com"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/franneck94/vscode-c-cpp-runner.git"
+	},
 	"publisher": "lcy",
 	"icon": "images/microbitLogo.png",
 	"engines": {
