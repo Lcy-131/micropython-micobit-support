@@ -12,6 +12,7 @@
 		"url": "https://github.com/Lcy-131/micropython-micobit-support.git"
 	},
 	"publisher": "lcy",
+	"license": "MIT",
 	"icon": "images/microbitLogo.png",
 	"engines": {
 		"vscode": "^1.84.0"
