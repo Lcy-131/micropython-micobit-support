@@ -3,10 +3,10 @@ Visual Studio Code 的 Micro:bit 插件，Micro:bit 官方的 Mu Editor 是对�
 ## 实现功能
 ![Control on Micro:bit!](https://github.com/Lcy-131/micropython-micobit-support/blob/main/images/firstView.png?raw=true "Do anything on Micro:bit")
 ![Info on flash](https://github.com/Lcy-131/micropython-micobit-support/blob/main/images/firstView.png?raw=true "Show Info")
-* 1: 显示 Micro:bit 引脚图像
-* 2: 刷入代码
-* 3: 刷写界面
-* 4: 刷写代码到 Micro:bit 的时候有提示信息
+* 1: 刷入代码
+* 2: 刷写界面
+* 3: 刷写代码到 Micro:bit 的时候有提示信息
+* 4: 显示 Micro:bit 引脚图像
 ## 必要条件
 * 安装了 Python 并且配置了 Path 环境变量
 * `pip install uflash`已经安装了 uflash
