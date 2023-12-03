@@ -1,20 +1,21 @@
 # microbit README
-Visual Studio Code的Micro:bit插件，Micro:bit官方的Mu Editor代码提示太不友好了，看到vs code的代码提示很强大，于是萌生了写个插件的想法，看了3天文档，实现了基本的刷入的功能，代码提示刚刚看懂。
+Visual Studio Code 的 Micro:bit 插件，Micro:bit 官方的 Mu Editor 是对于初学者而言的，看到 VScode 的 IntelliSence (代码提示) 很强大，于是萌生了写个插件的想法，实现了基本的刷入的功能。
 ## 实现功能
-* `F2`刷入代码
-* 刷写界面
-* `Ctrl + Shift + P`，输入flash，或者在命令行按`F2`执行刷写命令
-* 刷写代码到Micro:bit的时候有提示信息
+![Control on Micro:bit!](https://github.com/Lcy-131/micropython-micobit-support/blob/main/images/firstView.png?raw=true "Do anything on Micro:bit")
+* 1: 显示 Micro:bit 引脚图像
+* 2: 刷入代码
+* 3: 刷写界面，刷写代码到 Micro:bit 的时候有提示信息
 ## 必要条件
-* 安装了Python并且配置了Path环境变量
-* `pip install uflash`已经安装了uflash
-* vs code安装了Python语言支持插件
+* 安装了 Python 并且配置了 Path 环境变量
+* `pip install uflash`已经安装了 uflash
+* VScode 安装了 Python 语言支持插件
 ## 扩展设置
 目前插件没有额外设置
-没有解决自动安装uflash插件的问题
+## 已知不足
+没有解决自动安装 uflash 插件的问题
 ## 发行说明
-### 1.0.0
-实现了`F2`刷写代码
+### 0.5.0
+实现了按键刷写代码
 
 -----------------------------------------------------------------------------------------------------------
 ### 更多
