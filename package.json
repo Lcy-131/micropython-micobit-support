@@ -2,7 +2,7 @@
 	"name": "micropython-micobit-support",
 	"displayName": "micro:bit support",
 	"description": "Make micro:bit connections easier",
-	"version": "0.0.1",
+	"version": "0.5.0",
 	"author": {
 		"name": "useless_muzi",
 		"email": "lcy1312021@outlook.com"
