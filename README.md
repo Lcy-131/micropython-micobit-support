@@ -2,7 +2,6 @@
 Visual Studio Code 的 Micro:bit 插件，Micro:bit 官方的 Mu Editor 是对于初学者而言的，看到 VScode 的 IntelliSence (代码提示) 很强大，于是萌生了写个插件的想法，实现了基本的刷入的功能。
 ## 实现功能
 ![Control on Micro:bit!](https://github.com/Lcy-131/micropython-micobit-support/blob/main/images/firstView.png?raw=true "Do anything on Micro:bit")
-![Info on flash](https://github.com/Lcy-131/micropython-micobit-support/blob/main/images/firstView.png?raw=true "Show Info")
 * 1: 刷入代码
 * 2: 刷写界面
 * 3: 刷写代码到 Micro:bit 的时候有提示信息
